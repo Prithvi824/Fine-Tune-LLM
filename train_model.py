@@ -107,10 +107,7 @@ if __name__ == "__main__":
     print(Fore.BLUE + "Choose the upload mode: ", end="\n")
     print(Fore.BLUE + "1. Upload to Hugging Face", end="\n")
     print(Fore.BLUE + "2. Upload to Local at path: ./new_model", end="\n")
-    upload_mode = input(
-        Fore.BLUE + "Enter the upload mode: (Invalid input will default to Local) ",
-        end="\n",
-    )
+    upload_mode = input("Enter the upload mode (Invalid input will default to Local) :")
 
     # upload the model
     if upload_mode == "1":
