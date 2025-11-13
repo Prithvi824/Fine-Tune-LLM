@@ -218,6 +218,7 @@ def _get_trainer(
         dataset_text_field=dataset_text_field,
         dataset_num_proc=dataset_num_proc,
         assistant_only_loss=assistant_only_loss,
+        report_to="none"
     )
 
     # Step 3: Return the trainer

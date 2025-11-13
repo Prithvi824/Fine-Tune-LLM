@@ -6,13 +6,16 @@ This is the main file for the fine-tuning of the LLM.
 import unsloth
 
 # 3rd party imports
-from colorama import Fore
+from colorama import init, Fore
 
 # local imports
 from settings import settings
 from utils import _load_data, _load_model, _test_model_generation, _get_trainer
 
 if __name__ == "__main__":
+
+    # setup colorma
+    init(autoreset=True)
 
     # the testing parameters
     test_params = {
